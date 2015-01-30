@@ -1,0 +1,50 @@
+.swiper-container {
+  width: 980px;
+  height: 230px;
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.pagination{
+  display: none;
+}
+.red-slide {
+  background: #ca4040;
+   -webkit-transform: scale(0.85);
+  -moz-transform: scale(0.85);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.85);
+  transform: scale(0.85);
+}
+
+.swiper-slide .title {
+  font-style: italic;
+  font-size: 42px;
+  margin-top: 80px;
+  margin-bottom: 0;
+  line-height: 45px;
+}
+.pagination {
+  position: absolute;
+  z-index: 20;
+  left: 10px;
+  bottom: 10px;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: #222;
+  margin-right: 5px;
+  opacity: 0.8;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.swiper-visible-switch {
+  background: #aaa;
+}
+.swiper-active-switch {
+  background: #fff;
+}
