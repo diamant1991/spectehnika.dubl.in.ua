@@ -354,3 +354,64 @@ nav{
 .services-margin{
 	margin-left: 0;
 }
+.footer-header{
+	width: 100%;
+	background: #e1e1e1;
+	border-top: 1px solid #cfcfcf;
+	min-width: 980px;
+}
+	.footer-header:before{
+		content: "";
+		position: absolute;
+		border-top: 1px solid #fff;
+		width: 100%;
+		display: block;
+	}
+.footer-links{
+	width:980px;
+	margin: 0 auto;
+	padding-top: 40px;
+	padding-bottom: 35px;
+	overflow: hidden;
+}
+
+.footer-main, .footer-catalog, .footer-advert{
+	display: inline-block;
+	float: left;
+}
+	.footer-catalog{
+		margin-left: 40px;
+	}
+	.footer-advert{
+		margin-left: 45px;
+	}
+
+.footer-links h3{
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	color: #333;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+.footer-links a{
+	text-decoration: underline;
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	color: #000;
+}	
+	.footer-links a:hover{
+		text-decoration: none;
+	}
+.footer-links ul{
+	line-height: 1.5;
+}
+.footer-advert ul{
+	float: left;
+}
+	.footer-advert ul:nth-child(3){
+		margin-left: 65px;
+	}
+	.footer-advert ul:last-child{
+		margin-left: 85px;
+	}
