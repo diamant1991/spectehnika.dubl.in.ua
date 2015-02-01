@@ -1,30 +1,45 @@
 .swiper-container {
-  width: 980px;
-  height: 230px;
+  width: 950px;
+  height: 220px;
   color: #fff;
   text-align: center;
-  margin-top: 30px;
+  margin: 30px auto;
   cursor: pointer;
+
 }
 .pagination{
   display: none;
 }
-.red-slide {
-  background: #ca4040;
-   -webkit-transform: scale(0.85);
-  -moz-transform: scale(0.85);
-  -ms-transform: scale(0.8);
-  -o-transform: scale(0.85);
-  transform: scale(0.85);
+.swiper-slide {
+  background: #fff;
+   -webkit-transform: scale(09);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  position: relative;
 }
 
 .swiper-slide .title {
-  font-style: italic;
-  font-size: 42px;
-  margin-top: 80px;
-  margin-bottom: 0;
-  line-height: 45px;
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #004a80;
+  margin-top: 15px;
 }
+  .swiper-slide .title a{
+    color: #004a80;
+  }
+    .swiper-slide .title a:hover{
+      text-decoration: underline;
+    }
+  .swiper-slide img{
+    width: 95%;
+    
+    position: absolute;
+    bottom: 10px;
+    left: 6px;
+  }
 .pagination {
   position: absolute;
   z-index: 20;
@@ -47,4 +62,27 @@
 }
 .swiper-active-switch {
   background: #fff;
+}
+.swiper{
+  position: relative;
+}
+.arrow-left{
+  display: inline-block;
+  width: 15px;
+  height: 29px;
+  background: url(../images/arrow-left.png);
+  position: absolute;
+  left: 0;
+  top: 90px;
+  cursor: pointer;
+}
+.arrow-right{
+  display: inline-block;
+  width: 15px;
+  height: 29px;
+  background: url(../images/arrow-right.png);
+  position: absolute;
+  right: 0;
+  top: 90px;
+  cursor: pointer;
 }
