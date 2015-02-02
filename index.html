@@ -9,13 +9,15 @@
 	<title>Spectechika</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="keywords" content="" >
-	<meta name="description" content="" >
+	<meta name="description" content="">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/modal-contact.css">
 	<link rel="stylesheet" href="css/idangerous.swiper.css">
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script src="js/dm-modal.js"></script>
+	
 </head>
 <body>
 	<div class="wrapper">
@@ -38,18 +40,18 @@
 				</div>
 				<div class="clear"></div>
 				<div class="make-order">
-					<a>Сделать заказ в один клик</a>
+					<a href="#?w=500" rel="popup_contact" class="button poplight">Сделать заказ в один клик</a>
 				</div>
 			</div>
 		</header>
 		<div class="clear"></div>
 		<nav>
 			<ul class="nav">
-				<li class="active">
-					<a href="#" class="active">Поставка строительных материалов</a>
+				<li >
+					<a href="#">Поставка строительных материалов</a>
 				</li>
-				<li>
-					<a href="#">Аренда Спецтехники</a>
+				<li class="active">
+					<a href="#" class="active">Аренда Спецтехники</a>
 				</li>
 				<li>
 					<a href="#">Спецобьявления</a>
@@ -81,6 +83,7 @@
 				        	<a href="#">Slide 1</a>
 				        </div>
 				        <img src="images/rent-2.jpg" alt="">
+				        <div class="polosa"></div>
 				      </div>
 				     
 				      <div class="swiper-slide">
@@ -88,42 +91,49 @@
 				        	<a href="#">Slide 2</a>
 				        </div>
 							<img src="images/rent-1.jpg" alt="">
+							<div class="polosa"></div>
 				      </div>
 				      <div class="swiper-slide">
 				        <div class="title">
 				        	<a href="#">Slide 3</a>
 				        </div>
 				        <img src="images/rent-1.jpg" alt="">
+				        <div class="polosa"></div>
 				      </div>
 				      <div class="swiper-slide">
 				        <div class="title">
 				        	<a href="#">Slide 4</a>
 				        </div>
 				        <img src="images/rent-1.jpg" alt="">
+				        <div class="polosa"></div>
 				      </div>
 				      <div class="swiper-slide">
 				        <div class="title">
 				        	<a href="#">Slide 5</a>
 				        </div>
 				        <img src="images/rent-1.jpg" alt="">
+				        <div class="polosa"></div>
 				      </div>
 				      <div class="swiper-slide">
 				        <div class="title">
 				        	<a href="#">Slide 6</a>
 				        </div>
 				        <img src="images/rent-1.jpg" alt="">
+				        <div class="polosa"></div>
 				      </div>
 				      <div class="swiper-slide">
 				        <div class="title">
 				        	<a href="#">Slide 7</a>
 				        </div>
 				        <img src="images/rent-1.jpg" alt="">
+				        <div class="polosa"></div>
 				      </div>
 				      <div class="swiper-slide">
 				        <div class="title">
 				        	<a href="#">Slide 8</a>
 				        </div>
 				        <img src="images/rent-1.jpg" alt="">
+				        <div class="polosa"></div>
 				      </div>
 				    </div>
     
@@ -151,48 +161,57 @@
 				        	<a href="#">Slide 1</a>
 				        </div>
 				        <img src="images/materials.jpg" alt="">
+				        <div class="polosa"></div>
+
 				      </div>
 				      <div class="swiper-slide red-slide">
 				        <div class="title">
 				        	<a href="#">Slide 2</a>
 				        </div>
 				         <img src="images/materials.jpg" alt="">
+				         <div class="polosa"></div>
 				      </div>
 				      <div class="swiper-slide red-slide">
 				        <div class="title">
 				        	<a href="#">Slide 3</a>
 				        </div>
 				         <img src="images/materials.jpg" alt="">
+				         <div class="polosa"></div>
 				      </div>
 				      <div class="swiper-slide red-slide">
 				        <div class="title">
 				        	<a href="#">Slide 4</a>
 				        </div>
 				         <img src="images/materials.jpg" alt="">
+				         <div class="polosa"></div>
 				      </div>
 				      <div class="swiper-slide red-slide">
 				        <div class="title">
 				        	<a href="#">Slide 5</a>
 				        </div>
 				         <img src="images/materials.jpg" alt="">
+				         <div class="polosa"></div>
 				      </div>
 				      <div class="swiper-slide red-slide">
 				        <div class="title">
 				        	<a href="#">Slide 6</a>
 				        </div>
 				         <img src="images/materials.jpg" alt="">
+				         <div class="polosa"></div>
 				      </div>
 				      <div class="swiper-slide red-slide">
 				        <div class="title">
 				        	<a href="#">Slide 7</a>
 				        </div>
 				         <img src="images/materials.jpg" alt="">
+				         <div class="polosa"></div>
 				      </div>
 				      <div class="swiper-slide red-slide">
 				        <div class="title">
 				        	<a href="#">Slide 8</a>
 				        </div>
 				         <img src="images/materials.jpg" alt="">
+				         <div class="polosa"></div>
 				      </div>
 				    </div>
     
@@ -336,9 +355,43 @@
 				</div>
 			</div>
 		</div>
+		<div class="clear"></div>
+		<div class="footer-bottom">
+			<div class="footer-copyright">
+				<p>© 2010-2015 «Вся спецтехника».</p>
+				<p>Техническая поддержка: <a href="#">info@spectehnika.ru</a></p>
+				<a href="#" class="copyright"></a>
+			</div>
+		</div>
 	</footer>
 
+	<div id="popup_contact" class="popup_block"><!--Всплывающая форма-->
+        <form id="form" action="/" method="post">	
+			<fieldset>
+				<p class="first">
+					<label for="name">Имя:</label>
+					<input type="text" name="name" id="name"/>
+				</p>
+				<p class="second">
+					<label for="email">E-mail:</label>
+					<input type="text" name="email" id="email" />
+				</p>
+				<p class="third">
+					<label for="telephone">Телефон:</label>
+					<input type="text" name="telephone" id="telephone" />
+				</p>	
+				<p>
+					<label for="message">Комментарий:</label>
+					<textarea name="message" id="message" cols="30" rows="10"></textarea>
+				</p>			
+			</fieldset>																							
+			<p class="submit"><button type="submit">Отправить</button></p>						
+		</form>
+      </div><!--Конец формы-->
+
+	
 	<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>	

@@ -16,3 +16,4 @@
     var swiper = $(this).siblings('.swiper-container').data('swiper');
     swiper.swipeNext();
   });
+  
