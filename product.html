@@ -6,24 +6,28 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-	<title>Spectechika-catalog</title>
+	<title>Spectechika-product</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="keywords" content="" >
 	<meta name="description" content="" >
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/modal-contact.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css">
+	<link rel="stylesheet" href="css/idangerous.swiper.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	<script src="js/dm-modal.js"></script>
+	<script src="js/jquery.fancybox-1.3.4.js"></script>
 	
 </head>
 <body>
 	<div class="wrapper">
-		<header>
+		<header itemscope itemtype="http://schema.org/Organization">
 			<div class="logo-container">
 				<a href="#"><img src="images/logo.png" alt="logo"></a>
 				<p>Вся</p>
-				<p><span class="spec">спецтехника</span> <span>В Томске</span></p>
+				<a href="#"><p><span class="spec" itemprop="name">спецтехника </span> <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"> В Томске</span></p></a>
 				<div class="clear"></div>
 				<p>Аренда спецтехники и поставка строительных материалов <span>и томской области</span></p>
 			</div>
@@ -34,7 +38,7 @@
 				</div>
 				<div class="clear"></div>
 				<div class="telephone">
-					<p><span>+7-913-</span>853-65-63</p>
+					<p itemprop="telephone"><span>+7-913-</span>853-65-63</p>
 				</div>
 				<div class="clear"></div>
 				<div class="make-order">
@@ -62,10 +66,10 @@
 		<div class="clear"></div>
 		<div class="catalog-container">
 			<div class="sidebar">
-				<div class="good-to-know">
+				<div class="good-to-know" itemscope itemtype="http://schema.org/ScholarlyArticle">
 					<h3>Полезно знать</h3>
-					<a href="#">Щебень гравийный и гравий - это один и тот же материал?</a>
-					<p>Нет это не так. Гравий - это округлый природный материал, который имеет гладкую поверхность (часто гравий называют галькой, но это тоже несовсем верно). ...</p>
+					<a href="#" itemprop="headline">Щебень гравийный и гравий - это один и тот же материал?</a>
+					<p itemprop="articleBody">Нет это не так. Гравий - это округлый природный материал, который имеет гладкую поверхность (часто гравий называют галькой, но это тоже несовсем верно). ...</p>
 					<a href="#">Смотреть все статьи</a>
 				</div>
 				<div class="clear"></div>
@@ -83,7 +87,7 @@
 				</div>
 				
 			</div>
-			<div class="catalog-content">
+			<div class="catalog-content" itemscope itemtype="http://schema.org/Product">
 				<div class="breadcrumbs">
 					<ul>
 						<li><a href="#"><span>Главная</span> ></a></li>
@@ -93,82 +97,144 @@
 				</div>
 				<div class="clear"></div>
 				<div class="photo-features">
-					<h3>Аренда автовышки в томске</h3>
+					<h3 itemprop="name">Аренда автовышки в томске</h3>
 					<div class="photo-block">
-						<img src="images/photo.jpg" alt="">
+						<img src="images/photo.jpg" alt="" itemprop="image">
+						<div class="swiper swiper-mini">
+							<a class="arrow-left"></a>
+							<a class="arrow-right"></a>
+							<div class="swiper-container mini-swiper">
+							    <div class="swiper-wrapper">	
+							      <div class="swiper-slide swiper-slide-mini">
+							        
+							        <a class="gallery" href="images/photo.jpg"><img src="images/mini-swiper.jpg" /></a>
+							      </div>
+							      <div class="swiper-slide swiper-slide-mini">
+										
+										<a class="gallery" href="images/photo.jpg"><img src="images/mini-swiper.jpg" /></a>
+							      </div>
+							      <div class="swiper-slide swiper-slide-mini">
+							      
+							        
+									<a class="gallery" href="images/photo.jpg"><img src="images/mini-swiper.jpg" /></a>
+							      </div>
+							      <div class="swiper-slide swiper-slide-mini">
+
+							       
+									<a class="gallery" href="images/photo.jpg"><img src="images/mini-swiper.jpg" /></a>
+							      </div>
+							      <div class="swiper-slide swiper-slide-mini">
+							       
+									<a class="gallery" href="images/photo.jpg"><img src="images/mini-swiper.jpg" /></a>
+							      </div>
+							      <div class="swiper-slide swiper-slide-mini">
+							        
+							        <a class="gallery" href="images/photo.jpg"><img src="images/mini-swiper.jpg" /></a>
+							      </div>
+
+							    </div>
+			    
+			    			<div class="pagination"></div>
+  								</div>
+  					</div>
 					</div>
+					
+
 					<div class="features-block">
 						<div class="text-features">
 							<span>Высота подъема</span>
+							<div class="dotted" style="width:99px;"></div>
 							<span>25.0  м</span>
 						</div>
+						<div class="clear"></div>
+						
 						<div class="text-features">
 							<span>Боковой вылет стрелы</span>
+							<div class="dotted" style="width:59px;"></div>
 							<span>15.0  м</span>
 						</div>
+						<div class="clear"></div>
 						<div class="text-features">
 							<span>Грузоподъемность</span>
+							<div class="dotted" style="width:57px;"></div>
 							<span>250-300  кг</span>
 						</div>
+						<div class="clear"></div>
 						<div class="text-features">
 							<span>Тип подъёмника</span>
+							<div class="dotted" style="width:65px;"></div>
 							<span>коленчатый</span>
 						</div>
+						<div class="clear"></div>
 						<div class="text-features">
 							<span>Тип проходимости</span>
+							<div class="dotted" style="width:70px;"></div>
 							<span>вездеход</span>
 						</div>
+						<div class="clear"></div>
 						<div class="status">
 							<span>Статут техники:</span>
 							<div class="status-info">
 								<a href="#">Свободна</a>
 							</div>
 						</div>
-						<div class="text-features">
+						<div class="text-features" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 							<span>1 сутки</span>
-							<span>2200 Р</span>
+							<div class="dotted" style="width:149px;"></div>
+							<span><span itemprop="price">2200</span><span itemprop="priceCurrency"> Р</span></span>
 						</div>
+						<div class="clear"></div>
 						<div class="text-features">
 							<span>2-5 суток</span>
+							<div class="dotted" style="width:139px;"></div>
 							<span>2200 Р</span>
 						</div>
+						<div class="clear"></div>
 						<div class="text-features">
 							<span>6-11 суток</span>
+							<div class="dotted" style="width:129px;"></div>
 							<span>2200 Р</span>
 						</div>
+						<div class="clear"></div>
 						<div class="text-features">
 							<span>12-20 суток</span>
+							<div class="dotted" style="width:119px;"></div>
 							<span>2200 Р</span>
 						</div>
+						<div class="clear"></div>
 						<div class="text-features">
 							<span>более 20 суток</span>
+							<div class="dotted" style="width:100px;"></div>
 							<span>2200 Р</span>
 						</div>
+						<div class="clear"></div>
 						<div class="reserve">
-							<a href="#">Забронировать</a>
+							<a href="#?w=500" rel="popup_contact" class="button poplight">Забронировать</a>
 						</div>
 					</div>
 				</div>
 				<div class="clear"></div>
 				<div class="description">
 					<h3>Описание</h3>
-					<p>Если вам потребовалась спецтехника в Томске, тогда наша компания предлагает вам воспользоваться всеми нужными машинами и агрегатами специального назначения на самых приемлемых в городе и регионе в целом условиях. </p>
-					<p>Мы имеем возможность предоставлять строительную и дорожную технику, грузовые машины для перевозки любых грузов, технику для выполнения любых земельных работ, строительства инженерных коммуникаций и массу других машин специального назначения.</p>
-					<div class="description-block">
-						<img src="images/nal.png" alt="">
-						<span>Оплата наличными</span>
-					</div>
-					<div class="description-block">
-						<img src="images/credit.png" alt="">
-						<span>Оплата безналичными</span>
-					</div>
-					<div class="description-block">
-						<img src="images/procent.png" alt="">
-						<span>НДС</span>
-					</div>
-					<div class="description-block">
-						<img src="images/24.png" alt="">
-						<span>Время работы круглосуточно</span>
+					<p itemprop="description">Если вам потребовалась спецтехника в Томске, тогда наша компания предлагает вам воспользоваться всеми нужными машинами и агрегатами специального назначения на самых приемлемых в городе и регионе в целом условиях. </p>
+					<p itemprop="description">Мы имеем возможность предоставлять строительную и дорожную технику, грузовые машины для перевозки любых грузов, технику для выполнения любых земельных работ, строительства инженерных коммуникаций и массу других машин специального назначения.</p>
+					<div class="icons">
+						<div class="description-block">
+							<img src="images/nal.png" alt="">
+							<span>Оплата наличными</span>
+						</div>
+						<div class="description-block">
+							<img src="images/credit.png" alt="">
+							<span>Оплата безналичными</span>
+						</div>
+						<div class="description-block">
+							<img src="images/procent.png" alt="">
+							<span>НДС</span>
+						</div>
+						<div class="description-block">
+							<img src="images/24.png" alt="">
+							<span>Время работы круглосуточно</span>
+						</div>
 					</div>
 				</div>
 				<div class="find-on-map">
@@ -177,26 +243,26 @@
 				</div>
 				<div class="analogy">
 					<h3>Аналогичные автовышки в аренду в томске</h3>
-					<div class="analogy-block">
-						<img src="images/services.jpg" alt="">
-						<span>Самосвал Камаз 53212</span>
-						<p>Технические характеристики: уточняйте по телефону</p>
-						<a href="#" class="analogy-reserve">Забронировать</a>
-						<div class="analogy-cost">800 Р</div>
+					<div class="analogy-block" itemscope itemtype="http://schema.org/Product">
+						<img src="images/services.jpg" alt="" itemprop="image">
+						<span itemprop="name">Самосвал Камаз 53212</span>
+						<p itemprop="description">Технические характеристики: уточняйте по телефону</p>
+						<a href="#?w=500" rel="popup_contact" class="button poplight analogy-reserve">Забронировать</a>
+						<div class="analogy-cost" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price">800</span><span itemprop="priceCurrency"> Р</span></div>
 					</div>
-					<div class="analogy-block">
-						<img src="images/services.jpg" alt="">
-						<span>Самосвал Камаз 53212</span>
-						<p>Технические характеристики: уточняйте по телефону</p>
-						<a href="#" class="analogy-reserve">Забронировать</a>
-						<div class="analogy-cost">800 Р</div>
+					<div class="analogy-block" itemscope itemtype="http://schema.org/Product">
+						<img src="images/services.jpg" alt="" itemprop="image">
+						<span itemprop="name">Самосвал Камаз 53212</span>
+						<p itemprop="description">Технические характеристики: уточняйте по телефону</p>
+						<a href="#?w=500" rel="popup_contact" class="button poplight analogy-reserve">Забронировать</a>
+						<div class="analogy-cost" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price">800</span><span itemprop="priceCurrency"> Р</span></div>
 					</div>
-					<div class="analogy-block">
-						<img src="images/services.jpg" alt="">
-						<span>Самосвал Камаз 53212</span>
-						<p>Технические характеристики: уточняйте по телефону</p>
-						<a href="#" class="analogy-reserve">Забронировать</a>
-						<div class="analogy-cost">800 Р</div>
+					<div class="analogy-block" itemscope itemtype="http://schema.org/Product">
+						<img src="images/services.jpg" alt="" itemprop="image">
+						<span itemprop="name">Самосвал Камаз 53212</span>
+						<p itemprop="description">Технические характеристики: уточняйте по телефону</p>
+						<a href="#?w=500" rel="popup_contact" class="button poplight analogy-reserve">Забронировать</a>
+						<div class="analogy-cost" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price">800</span><span itemprop="priceCurrency"> Р</span></div>
 					</div>
 				</div>
 				
@@ -306,9 +372,10 @@
 			<p class="submit"><button type="submit">Отправить</button></p>						
 		</form>
       </div><!--Конец формы-->
-
 	
 	
+	<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+	<script type="text/javascript" src="js/product.js"></script>	
 
 </body>
 </html>	

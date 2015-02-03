@@ -1,9 +1,13 @@
- var mySwiper = $('.swiper-container').swiper({
+jQuery(document).ready(function() {
+      		jQuery(".gallery").fancybox();
+    	});
+
+var mySwiper = $('.mini-swiper').swiper({
     pagination: '.pagination',
     loop:true,
     grabCursor: true,
     paginationClickable: true,
-    slidesPerView: 4,
+    slidesPerView: 3
   });
 
   $('.arrow-left').on('click', function(e){
@@ -16,4 +20,3 @@
     var swiper = $(this).siblings('.swiper-container').data('swiper');
     swiper.swipeNext();
   });
- 
