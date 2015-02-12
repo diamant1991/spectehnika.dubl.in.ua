@@ -23,7 +23,17 @@ header{
 	font-family: Arial, sans-serif;
 	width: 680px;
 	float: left;
+	position: relative;
 }
+	.arrow-list{
+		position: absolute;
+		display: block;
+		width: 30px;
+		height: 28px;
+		background: url(../images/arrow-bot.png);
+		right: -25px;
+		top: 38px;
+	}
 .logo-container img{
 	float: left;
 	margin-right: 10px;
@@ -38,11 +48,12 @@ header{
 	text-transform: uppercase;
 	color: #333333;
 }
-.logo-container a:nth-child(3) .spec{
+.spec{
 	color: #004a80;
 	font-size: 36px;
 	font-weight: 800;
 	font-family: Arial,sans-serif;
+	text-transform: uppercase;
 }
 .logo-container p:last-child{
 	font-family: 'MyriadProRegular';
@@ -51,7 +62,9 @@ header{
 .logo-container p:last-child>span{
 	font-size: 14px;
 	position: relative;
+	float: right;
 }
+
 .contacts{
 	width: 245px;
 	float: right;

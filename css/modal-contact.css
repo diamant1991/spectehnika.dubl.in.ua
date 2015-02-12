@@ -226,3 +226,24 @@ fieldset .second, fieldset .third, fieldset p:last-child{
     padding: 10px;
     resize:none;
 }
+.cities-list{
+    width: 31%;
+    float: left;
+    padding-left:20px;
+    height: 300px;
+}
+.cities-list.cities-border{
+     border-left: 1px solid #ccc;
+}
+#popup_contact-2{
+   
+    line-height: 1.7;
+    height: 300px;
+}
+    
+    .cities-list a{
+        color: #000;
+    }
+        .cities-list a:hover{
+            text-decoration: underline;
+        }
