@@ -16,4 +16,15 @@
     var swiper = $(this).siblings('.swiper-container').data('swiper');
     swiper.swipeNext();
   });
- 
+
+ $( document ).ready(function() {
+  $('.dropdown').hover(function(){
+        $(".dropdown-link").addClass('dropdown-back');
+        
+      },
+      function(){
+        $(".dropdown-link").removeClass('dropdown-back');   
+      });
+  
+
+ });

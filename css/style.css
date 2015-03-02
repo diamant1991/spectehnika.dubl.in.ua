@@ -156,6 +156,7 @@ nav{
 					0px -1px 0px 0px green;
 		box-shadow: 0px 1px 0px 0px green, 
 					0px -1px 0px 0px green;
+		position: relative;
 					
 	}
 		nav .nav li:first-child{
@@ -290,7 +291,43 @@ nav{
 		position: relative;
 		top: 25px;
 	}
-	
+
+.dropdown{
+	position: absolute;
+	z-index: 10;
+	display: none;
+	box-shadow: 0px 0px 0px 1px #004e83;
+	background: #0076a3; /* Old browsers */
+	background: -moz-linear-gradient(top,  #0076a3 0%, #006da0 37%, #005c90 62%, #004c82 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0076a3), color-stop(37%,#006da0), color-stop(62%,#005c90), color-stop(100%,#004c82)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #0076a3 0%,#006da0 37%,#005c90 62%,#004c82 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #0076a3 0%,#006da0 37%,#005c90 62%,#004c82 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #0076a3 0%,#006da0 37%,#005c90 62%,#004c82 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #0076a3 0%,#006da0 37%,#005c90 62%,#004c82 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0076a3', endColorstr='#004c82',GradientType=0 ); /* IE6-9 */
+}
+	.dropdown li{
+		width: 100% !important;
+		box-shadow: none !important;
+		border: 0 !important;
+	}
+		.dropdown li a{
+			background-image: none !important;
+		}
+		.dropdown li a:hover, .dropdown-back {
+		box-sizing: border-box !important;
+		background: #13b3c6 !important;
+		background: -moz-linear-gradient(top, #13b3c6 0%, #08b3c6 36%, #03a5b8 62%, #0097a9 100%) !important;
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#13b3c6), color-stop(36%,#08b3c6), color-stop(62%,#03a5b8), color-stop(100%,#0097a9)) !important;
+		background: -webkit-linear-gradient(top, #13b3c6 0%,#08b3c6 36%,#03a5b8 62%,#0097a9 100%) !important;
+		background: -o-linear-gradient(top, #13b3c6 0%,#08b3c6 36%,#03a5b8 62%,#0097a9 100%) !important;
+		background: -ms-linear-gradient(top, #13b3c6 0%,#08b3c6 36%,#03a5b8 62%,#0097a9 100%) !important;
+		background: linear-gradient(to bottom, #13b3c6 0%,#08b3c6 36%,#03a5b8 62%,#0097a9 100%) !important;
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13b3c6', endColorstr='#0097a9',GradientType=0 ) !important;
+}
+nav .nav li:hover>.dropdown{
+	display: block;
+}
 .add-equipment a{
 	width: 243px;
 	height: 38px;
